@@ -3,7 +3,7 @@ COPY . /app
 WORKDIR /app
  
 RUN ["dotnet", "restore"]
-RUN ["dotnet", "build", "*/**/project.json"]
+# RUN ["dotnet", "build", "*/**/project.json"]
 RUN ["dotnet", "publish", "./src/Mic.Fraz.Api/"]
 
 EXPOSE 5000/tcp
