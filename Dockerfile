@@ -1,9 +1,8 @@
-FROM microsoft/dotnet:latest
+FROM microsoft/dotnet:1.0.1-sdk-projectjson
 COPY . /app
 WORKDIR /app
  
 RUN ["dotnet", "restore"]
-# RUN ["dotnet", "build", "*/**/project.json"]
 RUN ["dotnet", "publish", "./src/Mic.Fraz.Api/"]
 
 EXPOSE 5000/tcp
