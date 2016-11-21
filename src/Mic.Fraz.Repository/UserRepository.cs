@@ -18,7 +18,7 @@ namespace Mic.Fraz.Repository
             return new User()
             {
                 Id = id,
-                Name = $"Name-{id}-{Guid.NewGuid()}"
+                Name = $"Fraz-{id}-{Guid.NewGuid()}"
             };
         }
         #pragma warning restore 1998
